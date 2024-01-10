@@ -30,3 +30,7 @@ assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 const resultTwo = tail(["Hello"]);
 assertEqual(resultTwo.length, 0); // ensure we get back two elements
 
+//Test
+const words = ["Hello", "Lighthouse", "Labs"];
+tail(words);
+assertEqual(words.length, 3);
