@@ -25,6 +25,11 @@ const countLetters = function(string) {
 
 
 
-// //Test Cases
-// assertEqual(countLetters("hello"), {'h': 1, 'e': 1, 'l': 2, 'o': 1}); //Should Pass
-// assertEqual(countLetters("hello dog"), {h: 1, e: 1, l: 2, o: 2, d: 1, g: 1}); // Should pass
+//Test Cases
+
+let result = countLetters("hello");
+assertEqual(result['h'], 1);
+assertEqual(result['e'], 1);
+assertEqual(result['l'], 2);
+assertEqual(result['o'], 1);
+
