@@ -29,12 +29,12 @@ const assertArraysEqual = function(array1, array2) {
 // Middle Function
 
 const middle = function(array) {
-  const middleIndex = (array.length - 1) / 2;
+  const middleIndex = Math.floor((array.length - 1) / 2);
   const evenIndexOne = (array.length) / 2;
   const evenIndexTwo = evenIndexOne - 1;
   const newArray = [];
   if (array.length === 1 || array.length === 2) {
-    newArray.push();
+    return newArray;
   } else if (array.length % 2 !== 0) {
     newArray.push(array[middleIndex]);
   } else {
@@ -50,4 +50,5 @@ middle([1,2,3,4,5,6]);
 
 // TEST CODE
 assertArraysEqual(middle([1,2,3]), [2]); //Should Pass
+assertArraysEqual(middle([1,2]), []); //Should Pass
 assertArraysEqual(middle(["Hello", "Light", "House"]), ["Light"]); //Shoudl Pass
