@@ -8,7 +8,7 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   for (const key of arrayOne) {
-    if (Array.isArray(arrayOne[key]) && Array.isArray(arrayTwo[key])) {
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       if (!eqArrays(arrayOne[key], arrayTwo[key])) {
         return false;
       }
@@ -29,7 +29,6 @@ const assertObjectsEqual = function(actual, expected) {
   } else if (equalBoo === false) {
     console.log(`🔴🔴🔴 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
-  console.log(`Example label: ${inspect({ a: '1', b: 2 })}`);
 };
 
 assertObjectsEqual({ a: '1', b: 2 }, { a: '1', b: 2 }) //True
