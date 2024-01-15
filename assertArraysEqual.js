@@ -13,8 +13,6 @@ const assertArraysEqual = function(array1, array2) {
     }
 }
 
-// Test calling the function
 
-assertArraysEqual(true, true);
 
 module.exports = assertArraysEqual;
