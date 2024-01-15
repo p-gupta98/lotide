@@ -50,6 +50,6 @@ assertArraysEqual(length, [ 5, 6, 5, 11 ]);
 
 //Test Case 3
 const num = [2, 5, 7, 11, 4];
-const addOne = map(num, number => number += 1);
+const addOne = map(num, number => number + 1);
 assertArraysEqual(addOne, [ 3, 6, 8, 12, 5 ]);
 

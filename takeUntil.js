@@ -29,7 +29,7 @@ const assertArraysEqual = function(array1, array2) {
 const takeUntil = function(array, callback) {
   const result = [];
 
-  for (item of array) {
+  for (let item of array) {
     if (callback(item)) {
       break;
     } else {
