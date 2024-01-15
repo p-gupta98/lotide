@@ -3,5 +3,5 @@ const eqArrays = require('../eqArrays');
 
 // Test calling the function
 
-assertArraysEqual(true, true);
+assertArraysEqual([3,5,6], [3,5,6]);
 
