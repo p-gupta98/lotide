@@ -1,7 +1,7 @@
 
 // Head Function Implementation
 
-const head = function(array, firstElement) {
+const head = function(array) {
   
   if (array.length === 0) {
     return undefined;
