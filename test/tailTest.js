@@ -10,7 +10,7 @@ assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 
 // Test Case 2: Check the returned array elements
 const resultTwo = tail(["Hello"]);
-assertEqual(resultTwo.length, 0); // ensure we get back two elements
+assertEqual(resultTwo.length, 0); // ensure we get back zero elements
 
 //Test
 const words = ["Hello", "Lighthouse", "Labs"];
