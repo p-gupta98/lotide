@@ -33,3 +33,4 @@ assertEqual(result['e'], 1);
 assertEqual(result['l'], 2);
 assertEqual(result['o'], 1);
 
+module.exports = countLetters;

@@ -53,3 +53,4 @@ const num = [2, 5, 7, 11, 4];
 const addOne = map(num, number => number + 1);
 assertArraysEqual(addOne, [ 3, 6, 8, 12, 5 ]);
 
+module.exports = map;

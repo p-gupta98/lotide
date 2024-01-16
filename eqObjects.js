@@ -48,3 +48,5 @@ assertEqual(eqObjects(songObject, anotherSongObject), true); // => true
 
 const popularSongObject= { artist: "Taylor Swift", album: ["red", "Fearless"], songName: "Begin Again" };
 assertEqual(eqObjects(songObject, popularSongObject), false); // => false
+
+module.exports = eqObjects;
